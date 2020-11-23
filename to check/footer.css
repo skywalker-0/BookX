@@ -1,0 +1,110 @@
+.footer{
+    display: relative;
+    margin-top: 20px;
+    height: fit-content;
+    
+ 
+ 
+}
+
+
+
+
+.footer{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    
+}
+
+.footer .social_links{
+    text-align: center;
+    padding: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-bottom: 1px solid white ;
+  }
+
+  .social_links i{
+      border: 2px solid white;
+      border-radius: 50%;
+     padding: 15px 16px;
+     margin-right: 15px;
+      font-size: 23px;
+  }
+  .social_links i:first-child{
+      padding: 15px 20px;
+  }
+
+  .social_links i:hover{
+      background-color: white;
+      color: black;
+  }
+
+  .footer .f_info{
+     
+     display: flex;
+      flex-wrap: wrap;
+      margin: 10px;
+      padding: 10px;
+     
+     
+  }
+  .footer .f_info h1{
+      font-size: 25px;
+      margin-bottom: 20px;
+      color: rgb(247, 150, 234);
+  }
+
+  .f_info1{
+    flex: 20%;
+   padding: 5px 10px;
+   font-size: 110%;
+    
+  }
+  .f_info2{
+      flex: 15%;
+      
+      padding: 5px 10px;
+      font-size: 110%;
+  }
+  .f_info2 a{
+      text-decoration: none;
+      color: white;
+      font-size: 110%;
+  }
+  .newslatter{
+       flex: 40%;
+       font-size: 110%;
+  }
+
+  .newslatter input{
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: 1px solid black;
+      color: black;
+      width: 50%;
+      margin: 10px;
+  }
+
+  .newslatter button{
+      padding: 10px 20px;
+      background-color:rgb(187, 9, 211);
+      font-size: 20px;
+      color: white;
+      border: 1px solid black;
+      border-radius: 5px;
+     margin: 10px;
+  }
+
+
+  @media screen and (max-width: 500px) {
+    .f_info1{
+        flex: 23%;
+       padding: 12px 5px;
+       font-size: 120%;
+        
+      }
+  }

@@ -1,0 +1,106 @@
+.logo-wrapper img{
+    
+    height: 80%;
+    width: auto;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+.header
+{
+    display: flex;
+    position: relative;
+    height: 60px;
+    justify-content: space-between;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+
+.header .menu-wrapper ul{
+    display: flex;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-right: 70px;
+}
+
+.header .menu-wrapper ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 10px 20px;
+    font-size: 1.3em;
+    color: gray;
+    padding-bottom: 5px;
+    transition: 1s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.header .menu-wrapper ul li:hover a{
+   color: black;
+   border-bottom: 2px solid black;
+   
+}
+
+.dropbtn{
+    display: none;
+}
+
+.header .menu-wrapper{
+    display: initial;
+}
+
+
+@media screen and (max-width: 500px) {
+.header{
+    flex-direction: column;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+.header .menu-wrapper{
+    display: none;
+}
+.header .menu-wrapper ul{
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom:55px;
+}
+
+.logo-wrapper img{
+    width: 60%;
+    height: auto;
+    margin-left: 17.5%;
+}
+
+.header .menu-wrapper ul li{
+    margin-top: 15px;
+}
+
+.header .menu-wrapper ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 10px 20px;
+    font-size: 1.3em;
+    color: gray;
+    padding-bottom: 5px;
+    transition: 1s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.header .menu-wrapper ul li:hover a{
+    color: black;
+    border-bottom: 2px solid black;
+    
+ }
+
+
+ .dropbtn{
+    display: inline-block;
+    border-radius: 1.5em;
+    font-size:150%;
+    padding: 16px 48px;;
+    background-color: white; 
+  color: black; 
+  border: 2px solid #7ed321;
+}
+
+}

@@ -1,0 +1,97 @@
+  <!--header-->
+        
+  <header class="header" style="background-color: white;width: 100%;">
+    <section class="logo-wrapper">
+        <img src="Images/Logo/logo.svg" alt="Bookx.com">
+
+    </section>
+
+    <button class="dropbtn" onclick="disp()">Menu</button>
+
+
+    <section class="menu-wrapper" id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><a href="#">Donate</a></li>
+
+        </ul>
+
+    </section>
+    
+</header>
+
+
+
+
+<!--footer-->
+
+<section class="footer">
+    <section class="social_links">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+    </section>
+    <section class="f_info">
+        <section class="f_info1">
+        <h1>Book-X.com</h1>
+        <h1>About Us</h1>
+        <span>Our website provides best user friendly book reading experienece.</span>
+        <br>
+        <br>
+        <h1>Contact Us</h1>
+        <i class="fa fa-phone" style="margin-right: 10px"></i>&nbsp;<span>+919974435870</span>
+        <br>
+        <i class="fa fa-envelope" style="margin-right: 10px"></i>&nbsp;<span>2019120xx@daiict.ac.in</span>
+  
+        </section>
+        <section class="f_info2">
+        <h1>Information</h1>
+        
+            <a href="#">Feedback</a>
+            <br>
+            <a href="#">Report Bug</a>
+            <br>
+            <br>
+  
+            <h1>Helpful Links</h1>
+        
+            <a href="#">Support</a>
+            <br>
+            <a href="#">Terms & Conditions</a>
+            <br>
+            <a href="#">Privacy Policy</a>
+            <br>
+        </section>
+        <section class="newslatter">
+        <h1>Newsletter Subscription</h1>
+        <input type="email" placeholder="Your E-mail Address">
+        <br>
+        <button onclick="subscribe()">Subscribe</button>
+        </section>
+    </section>
+  </section>
+
+
+
+
+
+
+
+  <!--javascript-->
+
+  <script>
+   
+   
+    function disp(){
+ 
+     var x = document.getElementById("menu");
+   if (x.style.display === "none") {
+     x.style.display = "inline-block";
+   } else {
+     x.style.display = "none";
+   }
+    }
+  </script>

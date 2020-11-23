@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"> 
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="loginstyle.css">
+<script src="javascript/addregister.js"></script>
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="footer.css">
+<script defer src="javascript/header.js"></script>
+
+</head>
+
+<body>
+  <!--header-->
+        
+  <header class="header" style="background-color: white;width: 100%;">
+    <section class="hamburgerbar">
+      <i class="fa fa-bars fa-2x"></i>
+     </section>
+    <section class="logo-wrapper">
+        <img src="Images/Logo/logo.svg" alt="Bookx.com">
+
+    </section>
+
+    <section class="menu-wrapper">
+        <ul>
+          <li ><a href="index.html" >Home</a></li>
+          <li><a href="explore.html"  >Explore</a></li>
+          <li><a href="#" id="active">Log In</a></li>
+          <li><a href="AboutUs.html">About us</a></li>
+          <li><a href="donate.html">Donate</a></li>
+
+        </ul>
+
+    </section>
+</header>
+
+
+
+<article class="container">
+  <form method="POST" action="/login">
+    <section class="row login">
+
+
+
+      <h4>Login</h4>
+       
+
+
+      <section class="input-group input-group-icon">
+        <input type="email" name="email" placeholder="Email Address" />
+        <section class="input-icon"><i class="fa fa-envelope"></i></section>
+      </section>
+
+
+      <section class="input-group input-group-icon">
+        <input type="password" name="password" placeholder="Password"/>
+        <section class="input-icon"><i class="fa fa-key"></i></section>
+      </section>
+
+      <section class="row">
+        <input type="submit"  value="GET STARTED">
+         </section>
+      
+         <p>
+          <a onclick="addregister()" id="new-click">New to this site. Register here</a>
+        </p>
+    
+      </section>
+
+
+
+
+
+
+      <section class="row register" style="display: none;">
+
+       
+        <h4>Register</h4>
+       
+
+
+      <section class="input-group input-group-icon">
+        <input type="email" name="email" placeholder="Email Address" />
+        <section class="input-icon"><i class="fa fa-envelope"></i></section>
+      </section>
+
+
+      <section class="input-group input-group-icon">
+        <input type="password" name="password" placeholder="Password"/>
+        <section class="input-icon"><i class="fa fa-key"></i></section>
+      </section>
+
+      <section class="input-group input-group-icon">
+        <input type="password" name="password" placeholder="Re-Enter Password"/>
+        <section class="input-icon"><i class="fa fa-key"></i></section>
+      </section>
+
+      <section class="row">
+        <input type="submit"  value="GET STARTED">
+         </section>
+    
+    
+      </section>
+      
+      
+   </section>
+      
+      
+  </form>
+</article>
+
+
+<!--footer-->
+
+<section class="footer">
+  <section class="social_links">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitter"></i>
+  </section>
+  <section class="f_info">
+      <section class="f_info1">
+      <h1>Book-X.com</h1>
+      <h1>About Us</h1>
+      <span>Our website provides best user friendly book reading experienece.</span>
+      <br>
+      <br>
+      <h1>Contact Us</h1>
+      <i class="fa fa-phone" style="margin-right: 10px"></i>&nbsp;<span>+919974435870</span>
+      <br>
+      <i class="fa fa-envelope" style="margin-right: 10px"></i>&nbsp;<span>abhikvaghela14@gmail.com</span>
+
+      </section>
+      <section class="f_info2">
+      <h1>Information</h1>
+      
+          <a href="#">Feedback</a>
+          <br>
+          <a href="#">Report Bug</a>
+          <br>
+          <br>
+
+          <h1>Helpful Links</h1>
+      
+          <a href="#">Support</a>
+          <br>
+          <a href="#">Terms & Conditions</a>
+          <br>
+          <a href="#">Privacy Policy</a>
+          <br>
+      </section>
+      <section class="newslatter">
+      <h1>Newslatter Subscription</h1>
+      <input type="email" placeholder="Your E-mail Address">
+      <br>
+      <button onclick="subscribe()">Subscribe</button>
+      </section>
+  </section>
+</section>
+
+
+
+ 
+
+</body>
+</html>

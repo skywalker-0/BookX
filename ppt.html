@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>
+            ppt
+        </title>
+        <style>
+            body{
+                width: 100%; 
+            }
+            #book-data{
+                display: flex;
+                width: 70%;
+                margin-top:10% ;
+                justify-content: space-evenly;
+                border: 10px double rgb(198, 198, 255);
+                margin-left: 10%;
+                padding: 2%;
+
+            }
+            #book-data img{
+                width: 20%;
+                height: auto;
+            }
+            #about-book{
+                margin-left: 5%;
+                
+            }
+            #about-book h1{
+                text-decoration:none;
+                color: black;
+                font-size: 250%;
+            }
+
+            #about-book p{
+                font-size: 150%;
+            }
+            #disp-book{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                width:100%;
+                margin-bottom: 10%;
+                 }
+            object{
+                width:70%;
+                margin-left: 10%;
+                height: 950px;
+                margin-top: 15%;
+                }
+            #range{
+                
+                }
+            #slider{
+                width: 300px;
+                transform: rotateZ(270deg);
+                height: 10px;
+                
+            }
+            #demo{
+                margin-left: -100px;
+                display: inline;
+                font-size:xx-large;
+            }
+
+            #slide-info{
+                margin-top: 70%;
+                margin-left: 10%;
+                font-size: large;
+                text-align: center;
+                border:3px dotted black;
+            }
+
+            @media only screen and (max-width: 500px)
+        {
+            #book-data{
+                flex-direction: column;
+            }
+            #disp-book{
+                flex-direction: column;
+            }
+            #book-data img{
+                width: 60%;
+                height: auto;
+                align-self: center;
+                padding-top: 10%;
+            }
+            #slider{
+                transform: rotateZ(0deg);
+                margin-top: 30%;
+            }
+            object{
+                width:80%;
+                margin-left: 0%;
+                height: 950px;
+                margin-top: 15%;
+                }
+            #demo{
+                margin-left: -350px;
+                display: inline;
+                font-size:xx-large;
+            }
+        }
+        </style>
+      <link href='https://fonts.googleapis.com/css?family=tittilium' rel='stylesheet'>
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link href='https://fonts.googleapis.com/css?family=BioRhyme' rel='stylesheet'>
+      <link rel="stylesheet" href="default.css">
+      <link rel="stylesheet" href="header.css">
+      <link rel="stylesheet" href="footer.css">
+      <link rel="stylesheet" href="showcase.css">
+      <link rel="stylesheet" href="homecards.css">
+      <link rel="stylesheet" href="offer.css">
+      <link rel="stylesheet" href="webfeatures.css">
+      <script defer src="javascript/index.js"></script>
+      <script defer src="javascript/header.js"></script>
+    </head>
+    
+    <body>
+
+  <!--header-->
+        
+  <section class="container">
+
+    <section class="menu-btn">
+      <i class="fa fa-bars fa-2x"></i>
+    </section>
+
+      <!--header-->
+      
+      <section class="header">
+        <section class="hamburgerbar">
+          <i class="fa fa-bars fa-2x"></i>
+         </section>
+          <section class="logo-wrapper">
+
+              <img src="Images/Logo/logo.svg" alt="Bookx.com">
+
+          </section>
+
+          <section class="menu-wrapper">
+              <ul>
+                  <li ><a href="index.html" id="active" >Home</a></li>
+                  <li><a href="explore.html">Explore</a></li>
+                  <li><a href="login.html">Log In</a></li>
+                  <li><a href="AboutUs.html">About us</a></li>
+                  <li><a href="donate.html">Donate</a></li>
+                  <li class="user"><a href="profile.html">My Profile</a></li>
+              </ul>
+
+          </section>
+      </section>
+
+
+        <article id="book-data">
+            <img src="bookmain.jpg" alt="loading">
+            <section id="about-book">
+                <h1>
+                    Harry potter and the cursed child
+                </h1>
+                <p>It was always difficult being Harry Potter and it isn't much easier now that he is an overworked employee of the Ministry of Magic, a husband, and father of three school-age children.
+
+                    While Harry grapples with a past that refuses to stay where it belongs, his youngest son Albus must struggle with the weight of a family legacy he never wanted. As past and present fuse ominously, both father and son learn the uncomfortable truth: sometimes, darkness comes from unexpected places.
+                    </p>
+            </section>
+        </article>
+
+        
+        <article id="disp-book">
+        
+            <object data='ppt.pdf' id="pdf">
+                <p>Oops! Your browser doesn't support PDFs!</p>
+                <p><a href="C:\Users\Hitesh\Desktop\201912006_METRICS IN IT INDUSTRY.pdf">Download Instead</a></p>
+            </object>
+       <section id="range" title="slide to enable custom dark mode">
+        <input type="range" min="0" max="100" value="0" id="slider">
+        <section id="demo"></section>
+        <section id="slide-info">slide to enable custom dark mode</section>
+       </section>
+        
+        </article>
+
+<!--footer-->
+
+<section class="footer">
+    <section class="social_links">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+    </section>
+    <section class="f_info">
+        <section class="f_info1">
+        <h1>Book-X.com</h1>
+        <h1>About Us</h1>
+        <span>Our website provides best user friendly book reading experienece.</span>
+        <br>
+        <br>
+        <h1>Contact Us</h1>
+        <i class="fa fa-phone" style="margin-right: 10px"></i>&nbsp;<span>+919974435870</span>
+        <br>
+        <i class="fa fa-envelope" style="margin-right: 10px"></i>&nbsp;<span>abhikvaghela14@gmail.com</span>
+
+        </section>
+        <section class="f_info2">
+        <h1>Information</h1>
+        
+            <a href="#">Feedback</a>
+            <br>
+            <a href="#">Report Bug</a>
+            <br>
+            <br>
+
+            <h1>Helpful Links</h1>
+        
+            <a href="#">Support</a>
+            <br>
+            <a href="#">Terms & Conditions</a>
+            <br>
+            <a href="#">Privacy Policy</a>
+            <br>
+        </section>
+        <section class="newslatter">
+        <h1>Newslatter Subscription</h1>
+        <input type="email" placeholder="Your E-mail Address">
+        <br>
+        <button onclick="subscribe()">Subscribe</button>
+        </section>
+    </section>
+</section>
+            <script>
+                let amount=document.getElementById('slider');
+               let change= document.getElementById('pdf');
+               change.style.filter="invert("+ amount.value + "%)";
+               var output = document.getElementById("demo");
+                output.innerHTML = slider.value;
+               
+               amount.oninput = function() {
+                change.style.filter = "invert("+ this.value+ "%)";
+                output.innerHTML = this.value;
+
+                }
+
+
+
+                function disp(){
+ 
+                     var x = document.getElementById("menu");
+          if (x.style.display === "none") {
+           x.style.display = "inline-block";
+           } else {
+           x.style.display = "none";
+                }
+               } 
+            </script>
+            </section>
+    </body>
+</html>

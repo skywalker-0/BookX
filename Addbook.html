@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="AboutUs.css">
+    <link rel="stylesheet" href="addbook.css">
+    <link href='https://fonts.googleapis.com/css?family=tittilium' rel='stylesheet'>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=BioRhyme' rel='stylesheet'>
+    <script defer src="javascript/header.js"></script>
+    <title>About us</title>
+</head>
+<body>
+
+    <section class="container">
+
+        <!--header-->
+        
+        <section class="header">
+            <section class="hamburgerbar">
+                <i class="fa fa-bars fa-2x"></i>
+               </section>
+            <section class="logo-wrapper">
+
+                <img src="Images/Logo/logo.svg" alt="Bookx.com">
+
+            </section>
+
+            <section class="menu-wrapper">
+                <ul>
+                    <li ><a href="index.html" id="active" >Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                    <li><a href="AboutUs.html">About us</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li class="user"><a href="profile.html">My Profile</a></li>
+
+                </ul>
+
+            </section>
+        </section>
+
+
+         <!--Add a book form-->
+
+         <section class="addbookcontainer">
+
+             
+            <section class="img-wrapper">
+            </section>
+           
+            <section class="info">
+                <section class="Addbookform">
+                    <h1>Add a New Book</h1>
+                    <p><strong>NOTE: </strong>Make sure that you upload your own content, provide necessesory citation and  <p>Upload book in PDF format only and bookcover in jpg format only</p></p>
+                   
+                    <form action="#">
+                    <table>
+                        <tr>
+                            <td><label for="name">Title: </label></td>
+                            <td><input type="text" value="" placeholder="Name of book"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="aname">Author: </label></td>
+                            <td><input type="text" value="" placeholder="Name of Author"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="name">Publisher: </label></td>
+                            <td><input type="text" value="" placeholder="Publisher of book"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="description" class="des01">Description: </label></td>
+                            <td><input type="text" value="" placeholder="Describe your book"></td>
+                        </tr>
+
+                       
+                        <tr>
+                            <td><label for="kname">Keywords: </label></td>
+                            <td><input type="text" value="" placeholder="Comma separated keywords"></td>
+                        </tr>
+                       
+                        <tr>
+                            <td><label for="PDF">Select a file: </label></td>
+                            <td><input type="file" value="" id="PDF01"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="JPG">BookCover Image: </label></td>
+                            <td><input type="file" value="" id="JPG01"></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="submit" id="submitbtn"></td>
+                        </tr>
+                    </table>
+                  
+                    </form>
+                </section>
+    
+            </section>
+    
+             
+         </section>
+     
+
+
+        <!--footer-->
+
+        <section class="footer">
+            <section class="social_links">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+            </section>
+            <section class="f_info">
+                <section class="f_info1">
+                <h1>Book-X.com</h1>
+                <h1>About Us</h1>
+                <span>Our website provides best user friendly book reading experienece.</span>
+                <br>
+                <br>
+                <h1>Contact Us</h1>
+                <i class="fa fa-phone" style="margin-right: 10px"></i>&nbsp;<span>+919974435870</span>
+                <br>
+                <i class="fa fa-envelope" style="margin-right: 10px"></i>&nbsp;<span>abhikvaghela14@gmail.com</span>
+        
+                </section>
+                <section class="f_info2">
+                <h1>Information</h1>
+                
+                    <a href="#">Feedback</a>
+                    <br>
+                    <a href="#">Report Bug</a>
+                    <br>
+                    <br>
+        
+                    <h1>Helpful Links</h1>
+                
+                    <a href="#">Support</a>
+                    <br>
+                    <a href="#">Terms & Conditions</a>
+                    <br>
+                    <a href="#">Privacy Policy</a>
+                    <br>
+                </section>
+                <section class="newslatter">
+                <h1>Newslatter Subscription</h1>
+                <input type="email" placeholder="Your E-mail Address">
+                <br>
+                <button onclick="subscribe()">Subscribe</button>
+                </section>
+            </section>
+    </section>
+    
+</body>
+</html>
